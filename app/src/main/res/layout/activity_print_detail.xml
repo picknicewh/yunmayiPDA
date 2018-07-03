@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.support.packbox.PackBoxDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="箱号："
+            android:layout_gravity="center"
+            android:textSize="@dimen/ts_large" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_x0.5"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_unbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_red"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_x0.5"
+            android:paddingLeft="@dimen/space_x1.5"
+            android:paddingRight="@dimen/space_x2"
+            android:paddingTop="@dimen/space_x0.5"
+            android:layout_gravity="center"
+            android:text="拆箱"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/home_title"
+        android:minHeight="@dimen/space_x5"
+        android:orientation="horizontal"
+        android:padding="@dimen/space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="标记:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/space"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="sku数:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space"
+                android:textColor="@color/goods_text_color"
+                android:text="0"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space"
+                android:text="@string/strip"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="数量:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space"
+                android:text="0"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space"
+                android:text="@string/piece"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_park"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

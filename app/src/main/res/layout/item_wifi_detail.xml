@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="@dimen/space"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wifi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YMY"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_x0.5"
+            android:text="安全性" />
+
+        <TextView
+            android:id="@+id/tv_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WAP/WPA2/ PSK"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ts_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_x0.5"
+            android:text="状态连接" />
+
+        <TextView
+            android:id="@+id/tv_connect_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已连接"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ts_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_x0.5"
+            android:text="信号强度" />
+
+        <TextView
+            android:id="@+id/tv_wifi_strong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/ts_small" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_x0.1"
+        android:background="@color/divine_line_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消" />
+        <View
+            android:layout_width="@dimen/space_x0.1"
+            android:layout_height="match_parent"
+            android:background="@color/divine_line_color" />
+
+        <TextView
+            android:id="@+id/tv_clean"
+            android:textColor="@color/red_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="清除" />
+
+    </LinearLayout>
+</LinearLayout>

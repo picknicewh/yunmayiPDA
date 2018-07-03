@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.support.lesspark.LessPackActivity">
+
+
+    <include layout="@layout/layout_base_park" />
+
+    <LinearLayout
+        android:id="@+id/rl_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关键字："
+            android:textColor="@color/goods_text_color"
+            android:textSize="@dimen/ts_large" />
+
+        <com.yun.mayi.pda.widget.ClearEditText
+            android:id="@+id/et_code_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space"
+            android:layout_weight="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/gray_border_bg"
+            android:hint="@string/code_hint"
+            android:padding="@dimen/space"
+            android:textSize="@dimen/ts_medium" />
+
+        <TextView
+            android:id="@+id/tv_code_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_x3.5"
+            android:layout_gravity="center"
+            android:background="@drawable/round_red"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_x2"
+            android:paddingRight="@dimen/space_x2"
+            android:text="@string/search"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_title"
+        android:gravity="center"
+        android:minHeight="@dimen/space_x5"
+        android:orientation="horizontal"
+        android:padding="@dimen/space">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缺货sku数:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_less_sku_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/red_btn"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space"
+                android:text="@string/strip"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缺货数量:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_less_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/red_btn"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space"
+                android:text="@string/piece"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_park"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

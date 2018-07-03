@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/space_x8"
+            android:layout_height="@dimen/space_x8"
+            android:layout_marginEnd="@dimen/space"
+            android:layout_marginTop="@dimen/space"
+            android:src="@mipmap/ic_logo" />
+       <RelativeLayout
+           android:layout_centerVertical="true"
+           android:layout_toEndOf="@+id/iv_image"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+
+               android:id="@+id/tv_name_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/space"
+               android:text="名称："
+               android:textSize="@dimen/ts_large" />
+
+           <TextView
+               android:id="@+id/tv_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/space"
+               android:layout_toEndOf="@+id/tv_text"
+               android:text="可口可乐"
+               android:singleLine="true"
+               android:ellipsize="end"
+               android:textSize="@dimen/ts_large" />
+
+           <TextView
+               android:id="@+id/tv_code_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_name_text"
+               android:layout_marginTop="@dimen/space"
+
+               android:text="条码："
+               android:textSize="@dimen/ts_large" />
+
+           <TextView
+               android:id="@+id/tv_code"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_name"
+               android:layout_marginTop="@dimen/space"
+               android:layout_toEndOf="@+id/tv_text"
+               android:text="13464495985248"
+               android:textSize="@dimen/ts_large" />
+
+           <TextView
+               android:id="@+id/tv_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_code_text"
+               android:layout_marginTop="@dimen/space"
+               android:text="售价："
+               android:textSize="@dimen/ts_large" />
+
+           <TextView
+               android:id="@+id/tv_sell_price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_code"
+               android:layout_marginTop="@dimen/space"
+               android:layout_toEndOf="@+id/tv_text"
+               android:text="28"
+               android:textSize="@dimen/ts_large" />
+       </RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_xx_large"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_btn"
+            android:text="取消" />
+        <View
+            android:layout_width="@dimen/space_x0.1"
+            android:layout_height="match_parent"
+            android:background="@color/divine_line_color" />
+        <Button
+            android:background="@color/transparent"
+            android:id="@+id/bt_conform"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_btn"
+            android:text="确认" />
+    </LinearLayout>
+</LinearLayout>

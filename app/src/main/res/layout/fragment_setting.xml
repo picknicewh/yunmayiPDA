@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunmayi.myihelper.module.home.MessageFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_wifi"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:padding="@dimen/space_x1.5"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/ts_large"
+            android:text="@string/wifi"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_wifi"
+            android:drawablePadding="@dimen/space"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bluetooth"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:padding="@dimen/space_x1.5"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/ts_large"
+            android:text="@string/bluetooth"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_bluetooth"
+            android:drawablePadding="@dimen/space"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_exit"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:padding="@dimen/space_x1.5"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/ts_large"
+            android:text="@string/exit"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_exit"
+            android:drawablePadding="@dimen/space"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

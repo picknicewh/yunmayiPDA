@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:minHeight="@dimen/space_x4"
+        android:orientation="horizontal"
+        android:padding="@dimen/space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="标记:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/space"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="sku数:"
+                android:textColor="@color/goods_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space"
+                android:text="0"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/strip"
+                android:textSize="@dimen/ts_large" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_parking"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_x3"
+            android:layout_gravity="center"
+            android:background="@drawable/round_orange"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_x2"
+            android:paddingRight="@dimen/space_x2"
+            android:text="@string/packing"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

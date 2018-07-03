@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_goods_conform"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_goods_conform"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text="@string/goods_conform" />
+
+
+            <TextView
+                android:id="@+id/tv_order_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_order_scan"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text="@string/order_scan" />
+            <TextView
+                android:id="@+id/tv_wait_pack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_wait_packing_order"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text="@string/wait_packing_order" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_goods_pack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_goods_pack"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text="@string/goods_pack" />
+
+            <TextView
+                android:id="@+id/tv_pack_manager"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_park_manager"
+                android:gravity="center"
+                android:text="@string/packed_manager"
+                android:padding="@dimen/space"/>
+            <TextView
+                android:id="@+id/tv_reject_check"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_reject_check"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text="@string/reject_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_scan_car"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_car_scan"
+                android:gravity="center"
+                android:text="@string/scan_car"
+                android:padding="@dimen/space"/>
+            <TextView
+                android:id="@+id/tv_pack_car"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_grey_bg"
+                android:drawablePadding="@dimen/space"
+                android:drawableTop="@mipmap/ic_load_card"
+                android:gravity="center"
+                android:padding="@dimen/space"
+                android:text="@string/pack_car" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+</LinearLayout>

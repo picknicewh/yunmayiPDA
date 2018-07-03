@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="退货商品详情"
+        android:textColor="@color/red_btn"
+        android:padding="@dimen/space"
+        android:gravity="center"
+        android:textSize="@dimen/ts_large"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_x0.1"
+        android:background="@color/divine_line_color"/>
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space"
+            android:text="订单编号："
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space"
+            android:layout_toEndOf="@+id/tv_order_text"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_reason_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_text"
+            android:layout_marginTop="@dimen/space"
+            android:text="退货原因："
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_number"
+            android:layout_marginTop="@dimen/space"
+            android:layout_toEndOf="@+id/tv_order_text"
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_remark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reason_text"
+            android:layout_marginTop="@dimen/space"
+            android:text="客户备注："
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reason"
+            android:layout_marginTop="@dimen/space"
+            android:layout_toEndOf="@+id/tv_order_text"
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_plat_remark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_remark_text"
+            android:layout_marginTop="@dimen/space"
+            android:text="客服备注："
+            android:textSize="@dimen/ts_large" />
+
+        <TextView
+            android:id="@+id/tv_plat_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_remark"
+            android:layout_marginTop="@dimen/space"
+            android:layout_toEndOf="@+id/tv_plat_remark_text"
+            android:textSize="@dimen/ts_large" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_x0.1"
+        android:background="@color/divine_line_color"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="@dimen/space"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:background="@drawable/round_red"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_large"
+            android:text="@string/conform" />
+
+    </LinearLayout>
+</LinearLayout>

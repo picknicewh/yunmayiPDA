@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yun.mayi.pda.module.home.setting.SettingWifiActivity">
+    <LinearLayout
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:padding="@dimen/space_x1.5"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/ts_large"
+            android:text="@string/wifi"
+            android:gravity="center_vertical"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton
+            android:id="@+id/tg_switch"
+            android:layout_width="@dimen/space_x6"
+            android:layout_height="@dimen/space_x3"
+            android:background="@drawable/toggle_btn"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/rv_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

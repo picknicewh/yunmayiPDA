@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/space"
+        android:text="商品装箱"
+        android:textColor="@color/red_btn"
+        android:textSize="@dimen/ts_x_large" />
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/space_x2"
+        android:text="改商品已经打包或者不存在此订单中"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_park"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_x0.1"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/space_x1.5"
+            android:text="取消"
+            android:textSize="@dimen/ts_large" />
+
+    </LinearLayout>
+</LinearLayout>

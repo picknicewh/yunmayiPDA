@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yun.mayi.pda.module.home.HomeActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <View
+        android:background="@color/divine_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_x0.1"/>
+    <RadioGroup
+        android:id="@+id/rg_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space">
+        <RadioButton
+            android:id="@+id/rb_work_bar"
+            style="@style/home_nav_btn"
+            android:checked="true"
+            android:drawableTop="@drawable/work_bar"
+            android:text="@string/workBar" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/home_nav_btn"
+            android:drawableTop="@drawable/message"
+            android:text="@string/message" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/home_nav_btn"
+            android:drawableTop="@drawable/setting"
+            android:text="@string/setting" />
+
+    </RadioGroup>
+</LinearLayout>

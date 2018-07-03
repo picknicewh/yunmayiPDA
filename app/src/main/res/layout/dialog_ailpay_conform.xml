@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:gravity="center"
+        android:padding="@dimen/space_x0.5"
+        android:text="确认支付？"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/ts_large" />
+
+    <com.yun.mayi.pda.widget.ClearEditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@drawable/gray_border_bg"
+        android:hint="请扫描支付条码"
+        android:lines="1"
+        android:padding="@dimen/space"
+        android:singleLine="true"
+        android:textSize="@dimen/ts_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应收金额:"
+                android:textColor="@color/main_text_color" />
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1648" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际金额:"
+                android:textColor="@color/main_text_color" />
+
+            <TextView
+                android:id="@+id/tv_actual_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1648" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:textSize="@dimen/ts_xx_large">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="取消"
+            android:textColor="@color/red_btn" />
+
+        <View
+            android:layout_width="@dimen/space_x0.1"
+            android:layout_height="match_parent"
+            android:background="@color/divine_line_color" />
+
+        <Button
+            android:id="@+id/bt_conform"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="确认"
+            android:textColor="@color/red_btn" />
+    </LinearLayout>
+</LinearLayout>

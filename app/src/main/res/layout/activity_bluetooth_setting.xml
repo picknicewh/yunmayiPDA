@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yun.mayi.pda.module.home.setting.SettingBluetoothActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_x1.5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/open_wifi"
+            android:textSize="@dimen/ts_large" />
+
+        <ToggleButton
+            android:id="@+id/tg_switch"
+            android:layout_width="@dimen/space_x6"
+            android:layout_height="@dimen/space_x3"
+            android:background="@drawable/toggle_btn"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_x0.5"
+            android:paddingTop="@dimen/space_x0.5"
+            android:text="已配对设备"
+            android:textColor="@color/point_text"
+            android:textSize="@dimen/ts_large" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_x0.5"
+            android:paddingTop="@dimen/space_x0.5"
+            android:text="可用设备"
+            android:textColor="@color/point_text"
+            android:textSize="@dimen/ts_large" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_unbluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

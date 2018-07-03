@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.join.loadpack.WaitPackCarActivity">
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="@dimen/space_x5"
+        android:orientation="horizontal"
+        android:padding="@dimen/space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关键字："
+            android:textColor="@color/goods_text_color"
+            android:textSize="@dimen/ts_large" />
+
+        <com.yun.mayi.pda.widget.ClearEditText
+            android:id="@+id/et_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/space_x3.5"
+            android:layout_marginRight="@dimen/space"
+            android:layout_weight="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/gray_border_bg"
+            android:hint="标记/订单号"
+            android:padding="@dimen/space_x0.5"
+            android:textSize="@dimen/ts_medium" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_x3"
+            android:layout_gravity="center"
+            android:background="@drawable/round_red"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_x2"
+            android:paddingRight="@dimen/space_x2"
+            android:text="@string/search"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/home_title"
+        android:padding="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="订单数："
+            android:textColor="@color/goods_text_color"
+            android:textSize="@dimen/ts_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_order_count"
+            android:text="0"
+            android:textColor="@color/red_btn"
+            android:textSize="@dimen/ts_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/single"
+            android:textColor="@color/goods_text_color"
+            android:textSize="@dimen/ts_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_park"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
